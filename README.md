@@ -3,6 +3,8 @@
 ## Requirements
 
 - Ubuntu 18.04
+- 3D Acceleration (GPU driver)
+  - Check your machine's *About* for the graphics driver: llvmpipe or nouveau are default drivers w/o 3D acceleration. Install the proprietary driver via *Software & Updates > Additional Drivers* or manually. Turn off *Secure Boot* in the BIOS if the driver doesn't change.
 - ROS Melodic full install http://wiki.ros.org/melodic/Installation/Ubuntu
 - Unreal Engine: [Install Guide](https://docs.unrealengine.com/4.26/en-US/SharingAndReleasing/Linux/BeginnerLinuxDeveloper/SettingUpAnUnrealWorkflow/), specifically [version 4.25.4](https://github.com/EpicGames/UnrealEngine/archive/refs/tags/4.25.4-release.tar.gz) (downloads the tarball)
   - Unreal requires a lot of disc space, at least 60 GB for the engine itself, and with several project even more. If space is scarse, remember to delete the tarball after unpacking and before building the engine.
